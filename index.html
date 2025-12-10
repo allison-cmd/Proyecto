@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.CSS" />
 </head>
 <body>
     <header>
@@ -23,16 +24,218 @@
         <p>¿Te apasiona la lectura o simplemente te gustaría empezar a leer más? Este es el lugar perfecto para ti. En nuestro Club de Lectura, no solo compartimos libros, sino experiencias, ideas y opiniones sobre historias que nos inspiran, nos emocionan y nos hacen pensar.</p>
         <article>
          <h3>Próxima reunión</h3>
+         <section>
          <p>La reunión sera el viernes 21 a las 15:00 en el parque de las Rehoyas.</p>  
-         <p>El libro que comentaremos sera <i>Memorias del subsuelo</i> que trata de la lucha interna del ser humano, su alienación y la reflexión sobre la libertad. El protagonista está atrapado en un ciclo de autodestrucción y, a pesar de sus intentos de encontrar un propósito o una salida, no puede escapar de su naturaleza autocompasiva.</p>
-         <figure>
+
+         <div class="contenedor">
+        <section class="texto">
+            <h4>Memorias del subsuelo</h4>
+                <p> El libro que comentaremos sera <i>Memorias del subsuelo</i> que trata de la lucha interna del ser humano, su alienación y la reflexión sobre la libertad. El protagonista está atrapado en un ciclo de autodestrucción y, a pesar de sus intentos de encontrar un propósito o una salida, no puede escapar de su naturaleza autocompasiva.</p>
+        </section>
+
+        <section class="imagen">
             <img src="Memorias-del-subsuelo.jpg" width="200">
-            
+        </div>
 
-         </figure>
-        </article>
+    <hr>
+
+    <h1>Reseñas</h1>
+
+        <div class="fila">
+             <section class="izquierda">
+                <h5>Matar a un ruiseñor — Harper Lee</h5>
+                <p>Reseña: Un relato sobre </p>
+                <p>la injusticia racial injusticia</p>
+                <p> racialen Estados Unidos a</p>
+                <p>través  de los ojos de una</p>
+                <p>niña. Reflexiona sobre la </p>
+                <p>moral, la empatía y el valor</p>
+                <p>de luchar por lo correcto.
+             </section>
+
+            <section class="derecha">
+                <h5>El gran Gatsby — F. Scott Fitzgerald</h5>
+                <p>Reseña:Un retrato de la</p>
+                <p>cadencia y los sueños rotos </p>
+                <p>la alta sociedad estadounidense </p>
+                <p>los años 20. El misterio y </p>
+                <p>nostalgia envuelven a sus </p>
+                <p>sonajes memorables.Me gusto 
+                <p> mucho porque tiene un estilo unico </p>
+            </section>
+        </div>
+        <div class="fila">
+             <section class="izquierda">
+                <h5>Fahrenheit 451 — Ray Bradbury</h5>
+                <p>Reseña:Una distopía sobre </p>
+                <p>un mundo donde los libros </p>
+                <p>están prohibidos y la censura</p>
+                <p>domina. Reflexiona sobre la </p>
+                <p>libertad, el pensamiento</p>
+                <p>crítico y el poder de la </p>
+                <p>lectura.</p>
+             </section>
+
+            <section class="derecha">
+                <h5>Drácula — Bram Stoker</h5>
+                <p>Reseña:El clásico de terror</p>
+                <p>gótico que introduce al icónico</p>
+                <p>conde Drácula. Suspenso, romance</p>
+                <p>y horror se entrelazan en esta</p>
+                <p>historia atemporal.</p>
+            </section>
+        </div>
         
-    </main>
+        <hr>
+  <h1>Próximos eventos — Club de lectura</h1>
+  <table id="tablaEventos" aria-label="Calendario de eventos">
+    <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Libro del mes</th>
+      <th>Autor</th>
+      <th>Lugar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-12-15</td>
+      <td>La sombra del viento</td>
+      <td>Carlos Ruiz Zafón</td>
+      <td>Biblioteca Central</td>
+    </tr>
+    <tr>
+      <td>2026-01-19</td>
+      <td>El cuento de la criada</td>
+      <td>Margaret Atwood</td>
+      <td>Café Literario Aurora</td>
+    </tr>
+    <tr>
+      <td>2026-02-16</td>
+      <td>El nombre de la rosa</td>
+      <td>Umberto Eco</td>
+      <td>Centro Cultural Mirador</td>
+    </tr>
+    <tr>
+      <td>2026-03-16</td>
+      <td>Norwegian Wood</td>
+      <td>Haruki Murakami</td>
+      <td>Biblioteca de la Ciudad</td>
+    </tr>
+    <tr>
+      <td>2026-04-20</td>
+      <td>La casa de los espíritus</td>
+      <td>Isabel Allende</td>
+      <td>Casa del Libro - Sala 2</td>
+    </tr>
+  </tbody>
+    <tbody></tbody>
+  </table>
+  <form action="https://webhook.site/9556ba4d-d150-4a70-97f5-40f04ac8e4dd" method="POST">
 
+  <label for="nombre">Nombre completo *</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="email">Email *</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefono">Teléfono *</label>
+  <input type="tel" id="telefono" name="telefono" required pattern="[0-9+\-\s]{6,15}">
+
+  <label for="genero">Género literario preferido *</label>
+  <select id="genero" name="genero" required>
+    <option value="">Seleccione uno...</option>
+    <option value="novela">Novela</option>
+    <option value="fantasia">Fantasía</option>
+    <option value="misterio">Misterio</option>
+    <option value="no_ficcion">No ficción</option>
+    <option value="clasicos">Clásicos</option>
+    <option value="poesia">Poesía</option>
+  </select>
+
+  <fieldset>
+    <legend>Horario preferido *</legend>
+
+    <label>
+      <input type="radio" name="horario" value="mañana" required>
+      Mañana
+    </label>
+
+    <label>
+      <input type="radio" name="horario" value="tarde" required>
+      Tarde
+    </label>
+
+    <label>
+      <input type="radio" name="horario" value="noche" required>
+      Noche
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferencias de contacto *</legend>
+
+    <label>
+      <input type="checkbox" name="contacto_email" value="email">
+      Email
+    </label>
+
+    <label>
+      <input type="checkbox" name="contacto_telefono" value="telefono">
+      Teléfono
+    </label>
+
+    <label>
+      <input type="checkbox" name="contacto_whatsapp" value="whatsapp">
+      WhatsApp
+    </label>
+  </fieldset>
+
+  <button type="submit">Enviar inscripción</button>
+
+</form>
+
+<section id="politica-privacidad" style="font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; line-height: 1.6;">
+
+  <p>En el Club de Lectura nos comprometemos a proteger la privacidad y seguridad de los datos personales de nuestros miembros y visitantes. Esta política explica cómo recopilamos, usamos y protegemos la información.</p>
+
+  <h3>1. Datos que recopilamos</h3>
+  <ul>
+    <li>Nombre y apellidos</li>
+    <li>Correo electrónico</li>
+    <li>Número de teléfono</li>
+    <li>Preferencias literarias y comentarios enviados en formularios</li>
+    <li>Información sobre la participación en eventos</li>
+  </ul>
+
+</section>
+    </main>
+    <aside>
+  <h2>Contenido Complementario</h2>
+  <ul>
+    <li><a href="#consejos-participar">Consejos para participar en los eventos</a></li>
+    <li><a href="#normas-club">Normas del club de lectura</a></li>
+    <li><a href="#recordatorios">Recordatorios importantes</a></li>
+    <li><a href="#tips-lectura">Listas de tips y recomendaciones</a></li>
+  </ul>
+
+  <p><strong>Consejos para participar:</strong> Cómo sacar el máximo provecho de cada sesión y participar activamente.</p>
+  <p><strong>Normas del club:</strong> Respeto, puntualidad y cuidado del material compartido.</p>
+  <p><strong>Recordatorios:</strong> Fechas de eventos, horarios y libros del mes.</p>
+  <p><strong>Tips de lectura:</strong> Recomendaciones para disfrutar y analizar los libros seleccionados.</p>
+</aside>
+<footer>
+  
+  <p> 2025 Club de Lectura. Todos los derechos reservados.</p>
+  
+  <p><a href="#top">⬆ Volver arriba</a></p>
+  
+  <div>
+    <a href="https://www.facebook.com" target="_blank" style="margin:0 10px; text-decoration:none;">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank" style="margin:0 10px; text-decoration:none;">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank" style="margin:0 10px; text-decoration:none;">Instagram</a>
+    <a href="https://www.linkedin.com" target="_blank" style="margin:0 10px; text-decoration:none;">LinkedIn</a>
+  </div>
+</footer>
 </body>
 </html>
